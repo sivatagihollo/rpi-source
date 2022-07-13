@@ -10,7 +10,7 @@ SEARCH FOR THE WORDS "firmware as of", AND THAN COPY THE FOLLOWING STRING, AND S
 !!!!!!!!!!
 
 
-(The channel log will look like this, you search for the first prescence of "firmware as of":
+(The document will look like this, you search for the first prescence of "firmware as of":
 
 
 raspberrypi-firmware (1:1.20220331-1) bullseye; urgency=medium
