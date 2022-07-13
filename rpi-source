@@ -13,7 +13,7 @@ import sys
 import argparse
 import urllib.request
 import urllib.error
-from urllib.parse import urlparse
+import urllib.parse as urlparse
 import gzip
 import subprocess
 import re
