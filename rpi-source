@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-#
+# 
 # Copyright (C) 2014 Noralf Tronnes
 #
 # MIT License
 #
-
+# Making this script compatible with python3 was a pain in my ass, so apriciate it
 import io
 import os
 import struct
