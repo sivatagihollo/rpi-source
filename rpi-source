@@ -177,12 +177,7 @@ def do_update():
     os.execv(sys.executable, argv)
 
 def check_diskspace(dir):
-    df = sh_out("df %s" % dir)
-    nums = re.findall(r'(?<=\s)\d+(?=\s+)', df)
-    if not nums or len(nums) != 3:
-        info("Warning: unable to check available diskspace")
-    if (int(nums[2]) / 1024) < DISK_USAGE_MB:
-        fail("Not enough diskspace (%dMB) on %s\nSkip this check with --skip-space" % (DISK_USAGE_MB, dir))
+  pass
 
 # see if gcc major.minor version matches the one used to build the running kernel
 def check_gcc():
