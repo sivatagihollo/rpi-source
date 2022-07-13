@@ -5,7 +5,8 @@
 #
 # MIT License
 #
-# Making this script compatible with python3 was a pain in my ass, so apriciate it
+# Modifyed by: sivatagihollo
+# Making this script compatible with python3 was a pain in my ass, so apriciate it.
 import io
 import os
 import struct
