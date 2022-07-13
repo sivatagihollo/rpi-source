@@ -11,8 +11,8 @@ import os
 import struct
 import sys
 import argparse
-import urllib
-import urllib2
+import urllib.request
+import urllib.error
 import urlparse
 import gzip
 import subprocess
