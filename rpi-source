@@ -109,13 +109,13 @@ def writef(f, str, mode='w'):
 def download(url):
     debug("download: %s" % url)
     try:
-        res = urllib2.urlopen(url).read()
-    except urllib2.HTTPError as e:
+        res = urllib.request.urlopen(url).read()
+    except urllib.error.HTTPError as e:
         fail(
             "Couldn't download %s, HTTPError: %s\n\n%s"
             % (url, e.code, json.dumps(json.load(e), indent=4))
         )
-    except urllib2.URLError, e:
+    except urllib.error.URLError as e:
         fail("Couldn't download %s, URLError: %s" % (url, e.args))
     return res
 
