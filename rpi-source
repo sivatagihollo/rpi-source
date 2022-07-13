@@ -13,7 +13,7 @@ import sys
 import argparse
 import urllib.request
 import urllib.error
-import urllib.parse as urlparse
+from urllib.parse import urlparse
 import gzip
 import subprocess
 import re
@@ -127,7 +127,7 @@ def download_to(url, file):
 def update_get_head():
     if update_get_head.ref:
         return update_get_head.ref
-    repo_short = urlparse.urlparse(script_repo).path
+    repo_short = urlparse(script_repo).path
     repo_api = "https://api.github.com/repos%s/git/refs/heads/master" % repo_short
     res = download(repo_api)
     try:
@@ -238,7 +238,7 @@ def rpi_update_method(uri):
         fw_rev = f.read().strip()
     info("Firmware revision: %s" % fw_rev)
 
-    repo_short = urlparse.urlparse(uri).path
+    repo_short = urlparse(uri).path
 
     repo_api = "https://api.github.com/repos%s" % repo_short
     repo_raw = "https://raw.githubusercontent.com%s" % repo_short
